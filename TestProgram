@@ -1,0 +1,28 @@
+# COP2800-2-Final-Exam-Program
+This is a GitHub repository link for the Final Exam Program for Programming in Java from PBSC
+
+// This program will create a Person, Student, Employee, Faculty, and Staff object and print their information. The purpose is to demonstrate inheritance and polymorphism by creating a hierarchy of classes. The Person class is the superclass and the other classes are subclasses. The Person class has a name, address, phone number, and email address. The Student class has a status. The Employee class has an office, salary, and date hired. It was created by Carlos Gonzalez for the Java Final Project from the COP 2800-2: Programming in Java class.
+
+import java.util.Date;
+public class GonzalezCarlosJavaFinal {
+  public static void main(String[] args) { // This is the main method which will be executed when the program is run.
+    
+    MyDate hireDate = new MyDate(2025, 4, 22); // This creates a MyDate object for the hire date of the employee.
+    
+    Person person = new Person("Romario Destine", "123 College Rd", "305-000-1111", "romario@example.com"); // This create a Person object for the person's name, address, phone number, and email address.
+    
+    Student student = new Student("Alex Johnson", "456 University Ave", "305-222-3333", "alex@example.com", Student.JUNIOR); // This creates a Student object for the student's status.
+    
+    Employee employee = new Employee("Sandra Clark", "789 Staff Ln", "305-444-5555", "sandra@example.com", "Room 201", 55000, hireDate); // This creates an Employee object for the employee's office, salary, and date hired.
+    
+    Faculty faculty = new Faculty("Dr. Nathan Hall", "321 Faculty Dr", "305-666-7777", "nathan@example.com", "Room 301", 70000, hireDate, "10am-4pm", "Dean of Students"); // This creates a Faculty object for the faculty's office hours and rank.
+    
+    Staff staff = new Staff("Emily Brown", "654 Admin St", "305-888-9999", "emily@example.com", "Room 401", 45000, hireDate, "Office Manager for Student Services"); // This creates a Staff object for the staff's title.
+
+    System.out.println(person); 
+    System.out.println(student); 
+    System.out.println(employee); 
+    System.out.println(faculty); 
+    System.out.println(staff); 
+  }
+} // This will print the information of the Person, Student, Employee, Faculty, and Staff objects.
